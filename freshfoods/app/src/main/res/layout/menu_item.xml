@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/level_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:text="@string/short_description"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        />
+
+    <com.tndnc.freshfood.views.MenuButtonView
+        android:id="@+id/button2"
+        style="@style/AppTheme.RoundedBorderedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:minHeight="35dp"
+        android:minWidth="40dp"
+        android:text="@string/button_info"
+        android:textColor="@color/white2"
+        app:layout_constraintEnd_toStartOf="@id/button3" />
+
+    <com.tndnc.freshfood.views.MenuButtonView
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white2"
+        android:minHeight="35dp"
+        android:text="@string/button_order"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        app:layout_constraintEnd_toEndOf="parent">
+    </com.tndnc.freshfood.views.MenuButtonView>
+
+
+</android.support.constraint.ConstraintLayout>

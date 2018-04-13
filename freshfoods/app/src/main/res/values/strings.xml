@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">FreshFood</string>
+    <string name="title_activity_main_menu">FreshFood</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_level_select">levelSelectActivity</string>
+    <string name="button_Reset">Reset</string>
+    <string name="button_Back">Back</string>
+    <string name="action_settings">Settings</string>
+    <string name="submit">Submit</string>
+    <string name="age">Age</string>
+    <string name="formation">Formation</string>
+    <string name="menuItem">Level </string>
+
+
+    <!-- Main Menu -->
+    <string name="open_menu">Open Menu</string>
+    <string name="button_options">Options</string>
+    <string name="button_about">About</string>
+    <string name="button_profile">Profile</string>
+    <string name="button_tutorial">Tutorial</string>
+    <!--MenuItem Select -->
+    <string name="level_select_title">Choose your food</string>
+    <string name="button_info">\?</string>
+    <string name="button_order">Order</string>
+    <string name="short_description">short description of this menu item</string>
+    <!-- User profile -->
+    <string name="user_profile_title">Please input user data</string>
+    <string name="user_profile_age">Age</string>
+    <string name="user_profile_formation">Formation</string>
+    <string name="button_user_profile">Save</string>
+    <string name="user_profile_disclaimer">This data will be used by the developers.</string>
+    <string name="user_profile_disc_2">The app also records data about your play style: \n
+        • the time spent solving the puzzles,  \n
+        • and the number of moves until a solution is found.</string>
+    <!-- About -->
+    <string name="about_title">About the restaurant</string>
+    <string name="about_text">A restaurant is a place where cooked food is sold to the public, and where people sit down to eat it. It is also a place where people go to enjoy the time and to eat a meal.
+        Some restaurants are a chain, meaning that there are a lot of restaurants that have the same name and serve the same food. McDonald\'s, Burger King,
+        and Pizza Hut are examples of chain restaurants that are all over the world. These restaurants serve fast food, that is, inexpensive food, prepared and served quickly.
+        At some, you do not have to even get out of the car to eat. You can pay and get your order from a window. These places are called drive-throughs.
+</string>
+    <string name="about_text_2">There are also chain restaurants that serve slightly more expensive food. They are called fast casual restaurants.
+        Applebee\'s and Perkins are examples of this type of chain restaurant. Haute cuisine or \'fine dining\' is found in a guide, such as the Michelin Guide,
+        the most famous restaurant guide in the world. Their 3-star rosettes are given only to restaurants with the highest standards of cooking and service.
+        Interestingly, the Guide gives more 3-stars to Tokyo and Kyoto than to Paris, London and New York together.[1][2] Traditionally,
+        the restaurants of top hotels such as the Hotel de Paris in Monte Carlo or the Hôtel Ritz Paris are the places recognized for fine dining.</string>
+    <string name="authors">Fresh foods inc</string>
+
+</resources>

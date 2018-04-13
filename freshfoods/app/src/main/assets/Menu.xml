@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuItems>
+    <menuItem name="Avocado Salad" price="7.50" size="1">
+        <shortdes text="this is an appetizer"></shortdes>
+    </menuItem>
+    <menuItem name="Guacamole" price="6.00" size="1">
+        <shortdes text="this is an appetizer" />
+    </menuItem>
+    <menuItem name="Cherry Tomatoes" price="7.50" size="1">
+        <shortdes text="this is an appetizer" />
+    </menuItem>
+    <menuItem name="Buffalo Chicken Dip" price="9.50" size="1">
+        <shortdes text="this is an appetizer" />
+    </menuItem>
+    <menuItem name="Pasta" price="11.00" size="2">
+        <shortdes text="this is a main dish" />
+    </menuItem>
+    <menuItem name="Pizza" price="8.50" size="2">
+        <shortdes text="this is a main dish" />
+    </menuItem>
+    <menuItem name="Beef" price="20.00" size="2">
+        <shortdes text="this is a main dish" />
+    </menuItem>
+    <menuItem name="Pork" price="13.50" size="2">
+        <shortdes text="this is a main dish" />
+    </menuItem>
+    <menuItem name="ColeSlaw" price="7.50" size="3">
+        <shortdes text="this is a side dish" />
+    </menuItem>
+    <menuItem name="Baked potato" price="8.00" size="3">
+        <shortdes text="this is a side dish" />
+    </menuItem>
+    <menuItem name="Salad" price="5.00" size="3">
+        <shortdes text="this is a side dish" />
+    </menuItem>
+    <menuItem name="French Fries" price="3.50" size="3">
+        <shortdes text="this is a side dish" />
+    </menuItem>
+    <menuItem name="Tiramisu" price="7.00" size="4">
+        <shortdes text="this is a desert" />
+    </menuItem>
+    <menuItem name="Cheescake" price="5.50" size="4">
+        <shortdes text="this is a desert" />
+    </menuItem>
+    ﻿
+    <menuItem name="Sorbet" price="6.00" size="4">
+        <shortdes text="this is a desert" />
+    </menuItem>
+    ﻿
+    <menuItem name="Brownie" price="7.50" size="4">
+        <shortdes text="this is a desert" />
+    </menuItem>
+    <menuItem name="Water" price="1.50" size="5">
+        <shortdes text="this is a drink" />
+    </menuItem>
+    <menuItem name="Cola" price="2.00" size="5">
+        <shortdes text="this is a drink" />
+    </menuItem>
+    ﻿
+    <menuItem name="Orange juice" price="3.50" size="5">
+        <shortdes text="this is a drink" />
+    </menuItem>
+    ﻿
+    <menuItem name="Beer" price="4.00" size="5">
+        <shortdes text="this is a drink" />
+    </menuItem>
+</menuItems>
