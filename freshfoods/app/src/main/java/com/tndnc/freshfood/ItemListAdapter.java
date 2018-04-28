@@ -3,17 +3,22 @@ package com.tndnc.freshfood;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.tndnc.freshfood.models.MenuItem;
+import com.tndnc.freshfood.utils.OrderListener;
 import com.tndnc.freshfood.views.MenuButtonView;
+import com.tndnc.freshfood.utils.InfoListener;
 
 import java.util.List;
 
 public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHolder> {
 
     private List<MenuItem> menuItems;
+    private final View.OnClickListener infoListener = new InfoListener();
+    private final View.OnClickListener orderListener = new OrderListener();
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         MenuButtonView buttonView,buttonOrderView;
@@ -41,6 +46,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
         MenuButtonView buttonView = (MenuButtonView) rootLayout.getChildAt(2);
         MenuButtonView buttonViewOrder = (MenuButtonView) rootLayout.getChildAt(3);
 
+        buttonView.setOnClickListener(infoListener);
+        buttonViewOrder.setOnClickListener(orderListener);
 
         return new ViewHolder(rootLayout, foodName, buttonView, foodDesc,buttonViewOrder);
     }
@@ -52,6 +59,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
         String str = menuItems.get(position).getName() + " : $" + menuItems.get(position).getPrice() ;
         holder.FoodName.setText( str );
         holder.FoodDesc.setText(menuItems.get(position).getShortdes());
+        holder.buttonView.setContentDescription(menuItems.get(position).getContain());
+        holder.buttonOrderView.setItem(menuItems.get(position));
     }
 
     @Override

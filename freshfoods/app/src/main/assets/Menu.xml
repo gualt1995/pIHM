@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menuItems>
     <menuItem name="Avocado Salad" price="7.50" size="1">
-        <shortdes text="this is an appetizer"></shortdes>
+        <shortdes text="this is an appetizer" contain="peanut"></shortdes>
     </menuItem>
     <menuItem name="Guacamole" price="6.00" size="1">
         <shortdes text="this is an appetizer" />
@@ -39,7 +39,7 @@
     <menuItem name="Tiramisu" price="7.00" size="4">
         <shortdes text="this is a desert" />
     </menuItem>
-    <menuItem name="Cheescake" price="5.50" size="4">
+    <menuItem name="Cheesecake" price="5.50" size="4">
         <shortdes text="this is a desert" />
     </menuItem>
     ﻿

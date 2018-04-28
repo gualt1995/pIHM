@@ -36,4 +36,6 @@ public class MenuButtonView extends AppCompatButton {
         this.l = l;
     }
 
+    public MenuItem getItem(){ return l; }
+
 }

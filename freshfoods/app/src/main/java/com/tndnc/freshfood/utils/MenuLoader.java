@@ -67,6 +67,7 @@ public class MenuLoader {
         String id;
         int size;
         String shortdes = "";
+        String contain = "";
 
         parser.require(XmlPullParser.START_TAG, null, "menuItem");
         id = parser.getAttributeValue(null, "name");
@@ -76,11 +77,12 @@ public class MenuLoader {
             if (parser.getEventType() != XmlPullParser.START_TAG) continue;
             parser.require(XmlPullParser.START_TAG, null, "shortdes");
             shortdes = parser.getAttributeValue(null, "text");
+            contain = parser.getAttributeValue(null, "contain");
         }
         parser.next();
         parser.next();
 
-        return new MenuItem(id, size,price,shortdes);
+        return new MenuItem(id, size,price,shortdes,contain);
     }
 
 
