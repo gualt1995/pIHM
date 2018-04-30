@@ -7,14 +7,16 @@ public class MenuItem {
     private MenuItem nextMenuItem;
     private String price;
     private String shortdes;
+    private String longdes;
     private String contain;
 
-    public MenuItem(String name, int size, String price, String shortdes, String contain) {
+    public MenuItem(String name, int size, String price, String shortdes, String contain,String longdes) {
         this.name = name;
         this.size = size;
         this.price = price;
         this.shortdes = shortdes;
         this.contain = contain;
+        this.longdes =longdes;
     }
 
     public void setNextMenuItem(MenuItem l) {
@@ -37,6 +39,10 @@ public class MenuItem {
 
     public int getSize() {
         return size;
+    }
+
+    public String getLongdes() {
+        return longdes;
     }
 
     @Override

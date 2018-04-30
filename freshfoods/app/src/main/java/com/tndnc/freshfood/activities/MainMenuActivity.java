@@ -28,7 +28,7 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void callWaiter(View v){
-        final Snackbar snackbar = Snackbar.make(findViewById(R.id.main_layout), "A waiter is successfully called", Snackbar.LENGTH_INDEFINITE);
+        final Snackbar snackbar = Snackbar.make(findViewById(R.id.main_layout), R.string.confirmed_call, Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction("Ok", new View.OnClickListener() {
             @Override
             public void onClick(View view) {

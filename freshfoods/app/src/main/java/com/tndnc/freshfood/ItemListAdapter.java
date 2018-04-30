@@ -21,13 +21,13 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     private final View.OnClickListener orderListener = new OrderListener();
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        MenuButtonView buttonView,buttonOrderView;
+        MenuButtonView buttonInfoView,buttonOrderView;
         TextView FoodName, FoodDesc;
         ViewHolder(ConstraintLayout root, TextView l, MenuButtonView v, TextView lc, MenuButtonView v1) {
             super(root);
             FoodName = l;
             FoodDesc = lc;
-            buttonView = v;
+            buttonInfoView = v;
             buttonOrderView = v1;
         }
     }
@@ -43,23 +43,25 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
 
         TextView foodName = (TextView) rootLayout.getChildAt(0);
         TextView foodDesc = (TextView) rootLayout.getChildAt(1);
-        MenuButtonView buttonView = (MenuButtonView) rootLayout.getChildAt(2);
+        MenuButtonView buttonViewInfo = (MenuButtonView) rootLayout.getChildAt(2);
         MenuButtonView buttonViewOrder = (MenuButtonView) rootLayout.getChildAt(3);
 
-        buttonView.setOnClickListener(infoListener);
+        buttonViewInfo.setOnClickListener(infoListener);
         buttonViewOrder.setOnClickListener(orderListener);
 
-        return new ViewHolder(rootLayout, foodName, buttonView, foodDesc,buttonViewOrder);
+        return new ViewHolder(rootLayout, foodName, buttonViewInfo, foodDesc,buttonViewOrder);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         MenuItem l = this.menuItems.get(position);
-        holder.buttonView.setItem(l);
+        holder.buttonInfoView.setItem(l);
         String str = menuItems.get(position).getName() + " : $" + menuItems.get(position).getPrice() ;
         holder.FoodName.setText( str );
         holder.FoodDesc.setText(menuItems.get(position).getShortdes());
-        holder.buttonView.setContentDescription(menuItems.get(position).getContain());
+        holder.buttonInfoView.setTitle(menuItems.get(position).getName());
+        holder.buttonInfoView.setLongDes(menuItems.get(position).getLongdes());
+        holder.buttonInfoView.setIngredients(menuItems.get(position).getContain());
         holder.buttonOrderView.setItem(menuItems.get(position));
     }
 

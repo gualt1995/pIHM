@@ -16,24 +16,24 @@
     <string name="open_menu">Open Menu</string>
     <string name="button_options">Options</string>
     <string name="button_call">Call the waiter</string>
+    <string name="confirmed_call">Waiter Called</string>
     <string name="button_about">About</string>
     <string name="button_profile">Profile</string>
     <string name="button_tutorial">Tutorial</string>
+
     <!--MenuItem Select -->
     <string name="level_select_title">Choose your food</string>
     <string name="button_info">\?</string>
+    <string name="button_add">Add</string>
     <string name="button_order">Order</string>
-    <string name="short_description">short description of this menu item</string>
-    <!-- User profile -->
-    <string name="user_profile_title">Please input user data</string>
-    <string name="user_profile_age">Age</string>
-    <string name="user_profile_formation">Formation</string>
-    <string name="button_user_profile">Save</string>
-    <string name="user_profile_disclaimer">This data will be used by the developers.</string>
-    <string name="user_profile_disc_2">The app also records data about your play style: \n
-        • the time spent solving the puzzles,  \n
-        • and the number of moves until a solution is found.</string>
-    <!-- About -->
+    <string name="number_of_items">food items in cart :</string>
+    <string name="shortdescription">testing</string>
+
+    <!-- Cart Menu -->
+    <string name="cart_title">Your Order</string>
+
+
+    <!--About -->
     <string name="about_title">About the restaurant</string>
     <string name="about_text">A restaurant is a place where cooked food is sold to the public, and where people sit down to eat it. It is also a place where people go to enjoy the time and to eat a meal.
         Some restaurants are a chain, meaning that there are a lot of restaurants that have the same name and serve the same food. McDonald\'s, Burger King,

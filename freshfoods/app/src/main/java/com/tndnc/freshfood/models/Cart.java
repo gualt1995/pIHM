@@ -1,6 +1,7 @@
 package com.tndnc.freshfood.models;
 
 import java.util.ArrayList;
+import com.tndnc.freshfood.activities.MenuSelectActivity;
 
 public class Cart {
     private static volatile ArrayList<MenuItem> cart = null;
@@ -17,6 +18,11 @@ public class Cart {
         printCart();
     }
 
+    public static void initiate(){
+        if (cart == null) new Cart();
+    }
+
+
     public static void printCart(){
         if (cart == null) return;
         for(MenuItem i : cart)
@@ -24,6 +30,10 @@ public class Cart {
         System.out.println("Total : "+somme);
     }
 
+
+    public static int numberOfItem(){
+        return cart.size();
+    }
     /*
     This method is used by the waiter by giving a password in order to reset the table when there're new clients
      */

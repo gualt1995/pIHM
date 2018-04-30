@@ -37,4 +37,8 @@
         <item name="android:background">@drawable/level_button_background</item>
     </style>
 
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/white2</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
 </resources>

@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tndnc.freshfood">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:name="com.tndnc.freshfood.MenuApplication"
+        android:name=".MenuApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_round"
         android:label="@string/title_activity_main_menu"
@@ -11,20 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name="com.tndnc.freshfood.activities.MainMenuActivity"
+            android:name=".activities.MainMenuActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_main_menu"
-            >
+            android:label="@string/title_activity_main_menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tndnc.freshfood.activities.MenuSelectActivity"
+            android:name=".activities.MenuSelectActivity"
             android:label="@string/level_select_title"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.tndnc.freshfood.activities.AboutActivity"/>
+        <activity android:name=".activities.AboutActivity" />
+
+        <activity android:name=".activities.CartActivity"
+            android:label="@string/cart_title"
+            android:theme="@style/AppTheme"/>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>
