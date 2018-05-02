@@ -3,7 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     tools:context="com.tndnc.freshfood.activities.CartActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/level_card_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:gravity="top"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        app:layout_constraintTop_toTopOf="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white2"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_order" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

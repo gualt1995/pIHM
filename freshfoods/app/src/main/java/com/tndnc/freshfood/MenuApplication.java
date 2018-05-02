@@ -7,6 +7,7 @@ import android.util.SparseArray;
 
 import com.tndnc.freshfood.models.MenuItem;
 import com.tndnc.freshfood.utils.MenuLoader;
+import com.tndnc.freshfood.models.Cart;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,8 @@ public class MenuApplication extends Application {
     private String uniqueId;
     private SparseArray<List<MenuItem>> itemsBySize;
     private SparseArray<ItemListAdapter> cardAdapters;
+    private SparseArray<OrderItemListAdapter> OrdercardAdapters;
+
 
 
     @Override
@@ -45,6 +48,7 @@ public class MenuApplication extends Application {
         for (int i = 1; i <= 5; i++) {
             this.cardAdapters.put(i, new ItemListAdapter(this.getMenuBySize().get(i)));
         }
+        this.OrdercardAdapters = new SparseArray<>();
     }
 
     public String getUniqueId(){
@@ -55,7 +59,14 @@ public class MenuApplication extends Application {
         return this.itemsBySize;
     }
 
+
+
     public ItemListAdapter getItemListAdapter(int numberOfAgents) {
         return this.cardAdapters.get(numberOfAgents);
+    }
+
+    public OrderItemListAdapter getOrderItemListAdapter(int numberOfAgents) {
+        this.OrdercardAdapters.put(1, new OrderItemListAdapter(Cart.getCart()));
+        return this.OrdercardAdapters.get(numberOfAgents);
     }
 }

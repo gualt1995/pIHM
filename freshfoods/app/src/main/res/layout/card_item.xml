@@ -25,26 +25,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="start"
-        android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:textSize="15sp"
+        android:paddingStart="10dp"
         android:text="@string/request"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        />
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-    <com.tndnc.freshfood.views.MenuButtonView
-        android:id="@+id/button2"
-        style="@style/AppTheme.RoundedBorderedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:minHeight="35dp"
-        android:minWidth="40dp"
-        android:text="@string/button_info"
-        android:textColor="@color/white2"
-        app:layout_constraintEnd_toStartOf="@id/button3" />
 
     <com.tndnc.freshfood.views.MenuButtonView
         android:id="@+id/button3"
@@ -52,7 +40,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white2"
         android:minHeight="35dp"
-        android:text="@string/button_add"
+        android:text="@string/button_remove"
         style="@style/AppTheme.RoundedCornerMaterialButton"
         app:layout_constraintEnd_toEndOf="parent">
     </com.tndnc.freshfood.views.MenuButtonView>

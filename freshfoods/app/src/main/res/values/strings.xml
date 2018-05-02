@@ -25,13 +25,14 @@
     <string name="level_select_title">Choose your food</string>
     <string name="button_info">\?</string>
     <string name="button_add">Add</string>
-    <string name="button_order">Order</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_cart">To Cart</string>
     <string name="number_of_items">food items in cart :</string>
-    <string name="shortdescription">testing</string>
+    <string name="request">no requests</string>
 
     <!-- Cart Menu -->
     <string name="cart_title">Your Order</string>
-
+    <string name="button_order">Order</string>
 
     <!--About -->
     <string name="about_title">About the restaurant</string>

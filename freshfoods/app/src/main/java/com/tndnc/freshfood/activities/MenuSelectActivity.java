@@ -40,13 +40,17 @@ public class MenuSelectActivity extends AppCompatActivity {
         RecyclerView.Adapter mAdapter = new CardListAdapter(
                 (MenuApplication) this.getApplication());
         mRecyclerView.setAdapter(mAdapter);
-
-
-        TextView ordertext = findViewById(R.id.textView2);
         Cart.initiate();
-        String str = "Items in cart : " + String.valueOf(Cart.numberOfItem());
-        ordertext.setText(str);
+        updateCart();
     }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        updateCart();
+    }
+
+
 
     public void updateCart(){
         TextView ordertext = findViewById(R.id.textView2);

@@ -7,61 +7,55 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.tndnc.freshfood.models.Cart;
 import com.tndnc.freshfood.models.MenuItem;
-import com.tndnc.freshfood.utils.AddListener;
+import com.tndnc.freshfood.utils.RemoveListener;
 import com.tndnc.freshfood.views.MenuButtonView;
-import com.tndnc.freshfood.utils.InfoListener;
 
 import java.util.List;
 
-public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHolder> {
+public class OrderItemListAdapter extends RecyclerView.Adapter<OrderItemListAdapter.ViewHolder> {
 
     private List<MenuItem> menuItems;
-    private final View.OnClickListener infoListener = new InfoListener();
-    private final View.OnClickListener orderListener = new AddListener();
+    private final View.OnClickListener RemoveListener = new RemoveListener();
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        MenuButtonView buttonInfoView,buttonOrderView;
-        TextView FoodName, FoodDesc;
-        ViewHolder(ConstraintLayout root, TextView l, MenuButtonView v, TextView lc, MenuButtonView v1) {
+        MenuButtonView buttonOrderView;
+        TextView FoodName,FoodDesc;
+        ViewHolder(ConstraintLayout root, TextView l,TextView lc, MenuButtonView v1) {
             super(root);
             FoodName = l;
             FoodDesc = lc;
-            buttonInfoView = v;
             buttonOrderView = v1;
         }
     }
 
-    ItemListAdapter(List<MenuItem> menuItems) {
+    OrderItemListAdapter(List<MenuItem> menuItems) {
         this.menuItems = menuItems;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ConstraintLayout rootLayout = (ConstraintLayout) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.menu_item, parent, false);
+                .inflate(R.layout.card_item, parent, false);
 
         TextView foodName = (TextView) rootLayout.getChildAt(0);
         TextView foodDesc = (TextView) rootLayout.getChildAt(1);
-        MenuButtonView buttonViewInfo = (MenuButtonView) rootLayout.getChildAt(2);
-        MenuButtonView buttonViewOrder = (MenuButtonView) rootLayout.getChildAt(3);
+        MenuButtonView buttonViewOrder = (MenuButtonView) rootLayout.getChildAt(2);
 
-        buttonViewInfo.setOnClickListener(infoListener);
-        buttonViewOrder.setOnClickListener(orderListener);
+        buttonViewOrder.setOnClickListener(RemoveListener);
 
-        return new ViewHolder(rootLayout, foodName, buttonViewInfo, foodDesc,buttonViewOrder);
+        return new ViewHolder(rootLayout, foodName,foodDesc,buttonViewOrder);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         MenuItem l = this.menuItems.get(position);
-        holder.buttonInfoView.setItem(l);
         String str = menuItems.get(position).getName() + " : $" + menuItems.get(position).getPrice() ;
         holder.FoodName.setText( str );
-        holder.FoodDesc.setText(menuItems.get(position).getShortdes());
-        holder.buttonInfoView.setTitle(menuItems.get(position).getName());
-        holder.buttonInfoView.setLongDes(menuItems.get(position).getLongdes());
-        holder.buttonInfoView.setIngredients(menuItems.get(position).getContain());
+        str = Cart.getDecription(l);
+        if (!str.equals("")) holder.FoodDesc.setText(str);
+
         holder.buttonOrderView.setItem(menuItems.get(position));
     }
 

@@ -11,7 +11,7 @@ import com.tndnc.freshfood.activities.MenuSelectActivity;
 import com.tndnc.freshfood.models.Cart;
 import com.tndnc.freshfood.views.MenuButtonView;
 
-public class OrderListener implements View.OnClickListener {
+public class AddListener implements View.OnClickListener {
     @Override
     public void onClick(final View view) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext(), R.style.MyDialogTheme);
@@ -25,7 +25,7 @@ public class OrderListener implements View.OnClickListener {
                 .setPositiveButton(R.string.button_add, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Cart.add(((MenuButtonView)view).getItem());
+                        Cart.add(((MenuButtonView)view).getItem(),input.getText().toString());
                         MenuSelectActivity menuSelectActivity = (MenuSelectActivity) view.getContext();
                         menuSelectActivity.updateCart();
                         dialogInterface.cancel();
