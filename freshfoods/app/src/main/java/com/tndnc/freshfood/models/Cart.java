@@ -11,6 +11,7 @@ public class Cart {
 
     private Cart() {
         cart = new HashMap<>();
+        somme = 0;
     }
 
     public static void add(MenuItem i,String s){
@@ -55,11 +56,7 @@ public class Cart {
         return somme;
     }
 
-
-    /*
-    This method is used by the waiter by giving a password in order to reset the table when there're new clients
-    public void reset(){
-        cart = null;
-        somme = 0;
-    }*/
+    public static void reset(){
+        new Cart();
+    }
 }

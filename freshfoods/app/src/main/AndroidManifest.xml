@@ -31,6 +31,10 @@
         <activity android:name=".activities.CartActivity"
             android:label="@string/cart_title"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activities.PayActivity"
+            android:label="@string/pay_title"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
