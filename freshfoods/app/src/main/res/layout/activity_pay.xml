@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/colorPrimary"
@@ -7,84 +8,100 @@
     android:id="@+id/pay_layout"
     tools:context="com.tndnc.freshfood.activities.PayActivity">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:layout_gravity="center">
+    <ImageButton
+        android:id="@+id/visa"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:contentDescription="@string/button_order"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/paypal"
+        android:adjustViewBounds="true"
+        android:onClick="callWaiterToPay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/visa"
+        app:layout_constraintBottom_toTopOf="@+id/master"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypal" />
 
-        <ImageButton
-            android:id="@+id/paypal"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/paypal"
-            android:onClick="callWaiterToPay"/>
+    <ImageButton
+        android:id="@+id/bitcoin"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:contentDescription="@string/button_order"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ae"
+        android:adjustViewBounds="true"
+        android:onClick="callWaiterToPay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bitcoin"
+        app:layout_constraintBottom_toTopOf="@+id/cash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ae" />
 
-        <ImageButton
-            android:id="@+id/visa"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/paypal"
-            android:layout_marginTop="20dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/visa"
-            android:onClick="callWaiterToPay"/>
+    <ImageButton
+        android:id="@+id/master"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:contentDescription="@string/button_order"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/visa"
+        android:adjustViewBounds="true"
+        android:onClick="callWaiterToPay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mastercard"
+        app:layout_constraintBottom_toTopOf="@+id/ae"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visa" />
 
-        <ImageButton
-            android:id="@+id/master"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/visa"
-            android:layout_marginTop="20dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/mastercard"
-            android:onClick="callWaiterToPay"/>
+    <ImageButton
+        android:id="@+id/paypal"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:contentDescription="@string/button_order"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:onClick="callWaiterToPay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/paypal"
+        app:layout_constraintBottom_toTopOf="@+id/visa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/ae"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/master"
-            android:layout_marginTop="20dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/americanexpress"
-            android:onClick="callWaiterToPay"/>
+    <ImageButton
+        android:id="@+id/ae"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:contentDescription="@string/button_order"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/master"
+        android:adjustViewBounds="true"
+        android:onClick="callWaiterToPay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/americanexpress"
+        app:layout_constraintBottom_toTopOf="@+id/bitcoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/master" />
 
-        <ImageButton
-            android:id="@+id/bitcoin"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/ae"
-            android:layout_marginTop="20dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/bitcoin"
-            android:onClick="callWaiterToPay"/>
-
-        <ImageButton
-            android:id="@+id/cash"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/bitcoin"
-            android:layout_marginTop="20dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/cash"
-            android:onClick="callWaiterToPay"/>
-    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/cash"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:contentDescription="@string/button_order"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bitcoin"
+        android:adjustViewBounds="true"
+        android:onClick="callWaiterToPay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bitcoin" />
 
 
 </android.support.constraint.ConstraintLayout>
