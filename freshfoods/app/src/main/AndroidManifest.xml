@@ -25,16 +25,19 @@
         <activity
             android:name=".activities.MenuSelectActivity"
             android:label="@string/level_select_title"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="fullSensor"/>
         <activity android:name=".activities.AboutActivity" />
 
         <activity android:name=".activities.CartActivity"
             android:label="@string/cart_title"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme"
+            android:screenOrientation="fullSensor"/>
 
         <activity android:name=".activities.PayActivity"
             android:label="@string/pay_title"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme"
+            android:screenOrientation="fullSensor"/>
     </application>
 
 </manifest>

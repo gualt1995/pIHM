@@ -22,6 +22,7 @@ public class PayActivity extends Activity {
             @Override
             public void onClick(View view) {
                 snackbar.dismiss();
+                finish();
             }
         });
         snackbar.show();
