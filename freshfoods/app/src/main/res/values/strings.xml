@@ -36,8 +36,9 @@
 
     <!-- Pay Menu -->
     <string name="pay_title">Payment method</string>
-    <string name="pay_call">Waiter called for your service. Thanks for using our system !</string>
-    <string name="paypal_call">Thanks for using our system !</string>
+    <string name="pay_call">Waiter called. Thanks for using our system !</string>
+    <string name="paypal_call">Waiter called. Thanks for using our system !</string>
+    <string name="main_text">Please select your paiment method</string>
 
     <!--About -->
     <string name="about_title">About the restaurant</string>
