@@ -3,7 +3,7 @@
 ## Organisation du code :
 
 Nous avons décidé de coder le prototype sous Android, le code est donc organisé de façon standard par Android Studio, 
-les classes java principales se trouvent donc dans le le dossier "freshfoods\app\src\main\java\com\tndnc\freshfood". <br>
+les classes java principales se trouvent donc dans le dossier "freshfoods\app\src\main\java\com\tndnc\freshfood". <br>
 Pour des soucis d'organisation nous avons séparé une partie du code en différentes catégories : activities, 
 models(back end de l'application), views, utils. <br>
 Vous trouverez également les ressources du projet dans : 
