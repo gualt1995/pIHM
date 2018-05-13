@@ -2,31 +2,31 @@ README - freshfood
 
 	Organisation du code :
 
-Nous avons décidé de coder le prototype sous Android, le code est donc organisé de façon standard par android Studio, 
-les classes java principales se trouvent donc dans le le dossier “freshfoods\app\src\main\java\com\tndnc\freshfood”  
-pour des soucis d’organisations nous avons séparé une partie du code en différentes catégories : activities , 
-models(back end de l’application), views, utils.vous trouverez également les ressources du projet dans : 
-“freshfoods\app\src\main\res comprenant” notamment les layouts de l’application et les images utilisées. 
-Finalement vous Trouverez dans le dossier  assets le fichier XML menu qui peut être édité pour modifier le contenu du menu.
+Nous avons dÃ©cidÃ© de coder le prototype sous Android, le code est donc organisÃ© de faÃ§on standard par android Studio, 
+les classes java principales se trouvent donc dans le le dossier â€œfreshfoods\app\src\main\java\com\tndnc\freshfoodâ€.  
+Pour des soucis dâ€™organisations nous avons sÃ©parÃ© une partie du code en diffÃ©rentes catÃ©gories : activities , 
+models (back end de lâ€™application), views, utils. Vous trouverez Ã©galement les ressources du projet dans : 
+â€œfreshfoods\app\src\main\res comprenantâ€ notamment les layouts de lâ€™application et les images utilisÃ©es. 
+Finalement vous trouverez dans le dossier assets le fichier XML menu qui peut Ãªtre Ã©ditÃ© pour modifier le contenu du menu.
 
-	l’interface :
+	lâ€™interface :
 
-lorsque l’application est ouverte l'utilisateur arrive sur une page de garde, il a ensuite trois choix, 
-il peut ouvrir le menu, appeler un serveur, ou bien obtenir plus d’informations sur le restaurant grâce au bouton about.
-Quand l’utilisateur ouvre l’interface du menu il a la possibilité d’ajouter des plat/boissons à son panier, 
-tout en faisant des requêtes spéciales, ou obtenir des informations sur le plat sélectionné.
-Après avoir choisi ses plats l’utilisateur peut passer en revue tous les articles de sons panier, 
-en enlever certains si il ne désire plus les commander plus lorsqu’il est prêt il peut choisir de passer commande, 
-ce qui ouvrira le menu de sélection du moyen de paiement. Après avoir sélectionné ce dernier 
-il n’a plus qu'à attendre sa commande. 
+Lorsque lâ€™application est ouverte l'utilisateur arrive sur une page de garde, il a ensuite trois choix, 
+il peut ouvrir le menu, appeler un serveur, ou bien obtenir plus dâ€™informations sur le restaurant grÃ¢ce au bouton about.
+Quand lâ€™utilisateur ouvre lâ€™interface du menu il a la possibilitÃ© dâ€™ajouter des plat/boissons Ã  son panier, 
+tout en faisant des requÃªtes spÃ©ciales, ou obtenir des informations sur le plat sÃ©lectionnÃ©.
+AprÃ¨s avoir choisi ses plats lâ€™utilisateur peut passer en revue tous les articles de sons panier, 
+en enlever certains s'il ne dÃ©sire plus les commander puis lorsquâ€™il est prÃªt il peut choisir de passer sa commande, 
+ce qui ouvrira le menu de sÃ©lection du moyen de paiement. AprÃ¨s avoir sÃ©lectionnÃ© ce dernier 
+il nâ€™a plus qu'Ã  attendre sa commande. 
 
-	Fonctionnalités : 
+	FonctionnalitÃ©s : 
 
--> La présence d’un bouton pour appeler un serveur
--> Présence d’un bouton avec interrogation pour afficher les détails d’un plat
--> Affichage d’une commande en cours avec possibilité de la modifier 
--> La possibilité choisir le moyen de paiement à la fin d’une commande
--> La possibilité de personnaliser nos plats
+-> La prÃ©sence dâ€™un bouton pour appeler un serveur
+-> PrÃ©sence dâ€™un bouton avec interrogation pour afficher les dÃ©tails dâ€™un plat
+-> Affichage dâ€™une commande en cours avec possibilitÃ© de la modifier 
+-> La possibilitÃ© de choisir le moyen de paiement Ã  la fin dâ€™une commande
+-> La possibilitÃ© de personnaliser nos plats
 -> Mode portrait/paysage de notre application
 
 Than Luong Binth
