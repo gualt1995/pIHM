@@ -30,12 +30,7 @@ Après avoir sélectionné ce dernier bouton,il n'a plus qu'à attendre sa comma
 * La possibilité de personnaliser nos plats
 * Mode portrait/paysage de notre application
 
-Binh Thanh Luong<br>
-Gualtiero Mottola<br>
-Hans Thirunavukarasu<br>
-Tristan de Blauwe<br>
-
-
-
-
-
+[Binh Thanh Luong](https://github.com/leondoofus)<br>
+[Gualtiero Mottola](https://github.com/gualt1995)<br>
+[Hans Thirunavukarasu](https://github.com/ThiruHans)<br>
+[Tristan de Blauwe](https://github.com/TBlauwe)<br>
