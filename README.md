@@ -1,14 +1,11 @@
 # Freshfood
 
 ## Introduction
-
-<p align="center">
 ![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png)
 ![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png)
 ![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/3.png)
 ![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/4.png)
 ![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png)
-</p>
 
 
 
