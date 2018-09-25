@@ -2,8 +2,10 @@
 
 ## Introduction
 
-<img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="180" height=""320" />
- 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png" width="350" title="hover text">
+  <img src=https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png" width="350" alt="accessibility text">
+</p>
 
 
 
