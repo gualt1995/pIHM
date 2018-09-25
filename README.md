@@ -1,10 +1,7 @@
 # Freshfood
 
 ## Introduction
-![test](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png | width=100)
-![test](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png | width=100)
-
-
+![](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png | width=100)
 
 
 
