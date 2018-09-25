@@ -1,11 +1,11 @@
 # Freshfood
 
 ## Introduction
-![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png)
-![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png)
-![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/3.png)
-![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/4.png)
-![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png | width=100)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png | width=100)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/3.png | width=100)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/4.png | width=100)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png | width=100)
 
 
 
