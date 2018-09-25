@@ -1,7 +1,14 @@
-# Freshfood
+# pIHM : Freshfood
 
 ## Introduction
+Freshfood is an Android app designed to replace the menus of a restaurant.
 
+
+## Installation
+The app was coded under Android Studio, the folder freshfoods should be recognized as a standard Android Studio project and 
+can be imported into the IDE, the app was tested with devices running android 5.0 to android 8.0.
+
+## Usage :
 <p align="center">
   <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png" width="150" title="hover text">
   <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png" width="150" title="accessibility text">
@@ -9,18 +16,6 @@
   <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/4.png" width="150" title="accessibility text">
   <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png" width="150" title="hover text">
 </p>
-
-
-
-Nous avons décidé de coder le prototype sous Android, le code est donc organisé de façon standard par Android Studio, 
-les classes java principales se trouvent donc dans le dossier "freshfoods\app\src\main\java\com\tndnc\freshfood". <br>
-Pour des soucis d'organisation nous avons séparé une partie du code en différentes catégories : activities, 
-models(back end de l'application), views, utils. <br>
-Vous trouverez également les ressources du projet dans : 
-"freshfoods\app\src\main\res" comprenant notamment les layouts de l'application et les images utilisées. <br>
-Finalement vous trouverez dans le dossier assets le fichier XML menu qui peut être édité pour modifier le contenu du menu.
-
-## L'interface :
 
 Lorsque l'application est ouverte l'utilisateur arrive sur une page de garde, il a ensuite trois choix, 
 il peut ouvrir le menu, appeler un serveur, ou bien obtenir plus d'informations sur le restaurant grâce au bouton about.<br>
@@ -39,7 +34,7 @@ Après avoir sélectionné ce dernier bouton,il n'a plus qu'à attendre sa comma
 * La possibilité de choisir le moyen de paiement à la fin d'une commande
 * La possibilité de personnaliser nos plats
 * Mode portrait/paysage de notre application
-
+## Original project by : 
 [Binh Thanh Luong](https://github.com/leondoofus)<br>
 [Gualtiero Mottola](https://github.com/gualt1995)<br>
 [Hans Thirunavukarasu](https://github.com/ThiruHans)<br>
