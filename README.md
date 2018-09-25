@@ -1,12 +1,13 @@
 # pIHM : Freshfood
 
 ## Introduction
-Freshfood is an Android app designed to replace the menus of a restaurant.
+Freshfood is the prototype for an Android app designed to replace the menus of a restaurant.
 
 
 ## Installation
 The app was coded under Android Studio, the folder freshfoods should be recognized as a standard Android Studio project and 
-can be imported into the IDE, the app was tested with devices running android 5.0 to android 8.0.
+can be imported into the IDE, the app was tested with devices running android 5.0 to android 8.0. You should then be able to either run 
+freshfoods on an Android VM or to install it on one of your devices. 
 
 ## Usage :
 <p align="center">
@@ -17,23 +18,14 @@ can be imported into the IDE, the app was tested with devices running android 5.
   <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png" width="150" title="hover text">
 </p>
 
-Lorsque l'application est ouverte l'utilisateur arrive sur une page de garde, il a ensuite trois choix, 
-il peut ouvrir le menu, appeler un serveur, ou bien obtenir plus d'informations sur le restaurant grâce au bouton about.<br>
-Quand l'utilisateur ouvre l'interface du menu il a la possibilité d'ajouter des plat/boissons à son panier, 
-tout en faisant des requêtes spéciales, ou obtenir des informations sur le plat sélectionné.<br>
-Après avoir choisi ses plats, l'utilisateur peut passer en revue tous les articles de sons panier, 
-en enlever certains s'il ne désire plus les commander puis lorsqu'il est prêt il peut choisir de passer sa commande, 
-ce qui ouvrira le menu de sélection du moyen de paiement.<br>
-Après avoir sélectionné ce dernier bouton,il n'a plus qu'à attendre sa commande. 
-
-## Fonctionnalités : 
-
-* La présence d'un bouton pour appeler un serveur
-* Présence d'un bouton avec interrogation pour afficher les détails d'un plat
-* Affichage d'une commande en cours avec possibilité de la modifier 
-* La possibilité de choisir le moyen de paiement à la fin d'une commande
-* La possibilité de personnaliser nos plats
-* Mode portrait/paysage de notre application
+After the app is installed on a device the user is able to access the restaurant menu, choose his food and add or remove ingredients 
+form the each of the dishes he adds. The cart then displays a summary of his order from which one can delete unwanted dishes or proceed to order and pay.
+## Features : 
+* The client is able to call a waiter 
+* The ingredients of each dish can be displayed
+* items can be removed from the Cart as long as the food is not ordered 
+* dishes can be customized by adding special requests 
+* supports portrait and landscape orientation
 ## Original project by : 
 [Binh Thanh Luong](https://github.com/leondoofus)<br>
 [Gualtiero Mottola](https://github.com/gualt1995)<br>
