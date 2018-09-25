@@ -1,6 +1,19 @@
-# [Freshfood](https://github.com/gualt1995/pIHM)
+# Freshfood
 
-## Organisation du code :
+## Introduction
+
+<p align="center">
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/1.png)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/2.png)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/3.png)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/4.png)
+![alt text](https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png)
+</p>
+
+
+
+
+
 
 Nous avons décidé de coder le prototype sous Android, le code est donc organisé de façon standard par Android Studio, 
 les classes java principales se trouvent donc dans le dossier "freshfoods\app\src\main\java\com\tndnc\freshfood". <br>
