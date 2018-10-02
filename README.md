@@ -5,9 +5,8 @@ Freshfood is the prototype for an Android app designed to replace the menus of a
 
 
 ## Installation
-The app was coded under Android Studio, the folder freshfoods should be recognized as a standard Android Studio project and 
-can be imported into the IDE, the app was tested with devices running android 5.0 to android 8.0. You should then be able to either run 
-freshfoods on an Android VM or to install it on one of your devices. 
+The app was coded under Android Studio 3.0.1. The folder freshfoods should be recognized as a standard Android Studio project and 
+can be imported into the IDE. The app was tested with devices running android 5.0 to android 8.0.You should be able to run Freshfoods either on an Android VM or to install it on one of your devices.  
 
 ## Usage :
 <p align="center">
@@ -18,8 +17,7 @@ freshfoods on an Android VM or to install it on one of your devices.
   <img src="https://raw.githubusercontent.com/gualt1995/pIHM/master/images/5.png" width="150" title="hover text">
 </p>
 
-After the app is installed on a device the user is able to access the restaurant menu, choose his food and add or remove ingredients 
-form the each of the dishes he adds. The cart then displays a summary of his order from which one can delete unwanted dishes or proceed to order and pay.
+After the app is installed the user is able to access the restaurant menu, choose his/her food and add or remove ingredients from the each of the dishes he/she adds. The cart then displays a summary of the order from which one can delete unwanted dishes or proceed to order and pay.
 ## Features : 
 * The client is able to call a waiter 
 * The ingredients of each dish can be displayed
